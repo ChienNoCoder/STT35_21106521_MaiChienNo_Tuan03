@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: beige; */
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px auto;
+        }
+
+        .wrapper{
+            width: 30%;
+            min-height: 500px;
+            /* background-color: aquamarine; */
+        }
+
+        .bai2-main1{
+            box-shadow: 2px 2px 20px #ccc;
+        }
+
+        .bai2-main1 p{
+            padding: 15px 16px;
+        }
+
+        .bai2-main2{
+            padding: 2px;
+            margin-top: 50px;
+            box-shadow: 2px 2px 20px #ccc;
+        }
+
+        .bai2-main2 .firstline li,
+        .bai2-main2 .secondline li{
+            display: inline-block;
+            padding: 20px 36px;
+        }
+
+        .bai2-main2 p{
+            text-align: center;
+            padding: 10px 0;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .bai5-main{
+            box-shadow: 2px 2px 20px #ccc;
+        }
+
+        .bai5-main .box{
+            width: 100%;
+            height: 800px;
+            background-image: url(https://th.bing.com/th?id=OIP.rNeU7YIcqJ7avb224qOVdwHaHC&w=256&h=243&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2),
+            url(https://th.bing.com/th?id=OIP.8i5Hl7CjlXRR85WffdJIKgHaJF&w=225&h=277&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+        }
+
+        .bai6-main{
+            box-shadow: 2px 2px 20px #ccc;
+        }
+
+        .bai6-main, .row{
+            width: 100%;
+        }
+
+        .row:before, .row:after{
+            display: table;
+            content: "";
+        }
+
+        .row:after{
+            clear: both;
+        }
+
+        .col1, .col2, .col3{
+            float: left;
+            width: 27.3333333%;
+            margin: 1%;
+            padding: 1%;
+        }
+
+        .bai7-main{
+            box-shadow: 2px 2px 20px #ccc;
+        }
+
+        .bai7-main .newspaper{
+            column-count: 3;
+            column-gap: 40px;
+
+            /* định dạng thanh ngăn cách */
+            column-rule-style: solid;
+            column-rule-width: 1px;
+            column-rule-color: lightblue;
+
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bai2">
+            <h1 style="margin-top: 100px;">Bài 2</h1>
+            <div class="bai2-main1">
+                <p style="text-indent: 1cm; color: red; text-align: justify;">
+                    Thiết lập chế độ độ thụt đầu dòng cho 1 đoạn văn bản. Thuộc tính này có thẻ gắn giá
+                    trị là tỉ lệ % hoặc một số cụ thể. Thiết lập chế đọ thụt đầu dòng cho 1 đoạn văn bản.
+                    Thuộc tính này có thể gán giá trị là tỉ lệ % hoặc một số cụ thể.
+                </p>
+    
+                <p style="text-align: right; color: blue;">
+                    Thuộc tính text-align: right; dùng để canh lề phải đoạn văn bản.
+                </p>
+    
+                <p style="text-align: center; color: green;">
+                    Thuộc tính text-align: Center; dùng để canh lề giữa đoạn văn bản.
+                </p>
+    
+                <p style="text-align: left ; color: brown;">
+                    Thuộc tính text-align: left; dùng để canh lề trái đoạn văn bản.
+                </p>
+    
+                <p style="text-decoration: underline; color: pink;">
+                    Thuộc tính text-decoration: underline; sẽ gạch dưới đoạn văn bản.
+                </p>
+    
+                <p style="text-decoration: line-through; color: purple;">
+                    Thuộc tính text-decoration: line-through; sẽ gạch ngang đoạn văn bản.
+                </p>
+    
+                <p style="text-decoration: overline; color: red;">
+                    Thuộc tính text-decoration: overline; sẽ gạch trên đoạn văn bản.
+                </p>
+    
+                <p style="text-decoration: blink; text-align: justify; color: blue; text-shadow: 4px 4px 8px blue;">
+                    Thuộc tính text-decoration: blink; sẽ gạch tạo hiệu ứng blink cho đoạn văn bản + thuộc tính text-shadow: 4px 4px 8px blue; tạo bóng cho chữ.
+                </p>
+            </div>
+
+            <div class="bai2-main2">
+                <div class="main2-border" style="border: 1px solid pink;">
+                    <ul class="firstline">
+                        <li style="letter-spacing: 2px; word-spacing: 2px; color: violet; text-shadow: 2px 2px 0 #000;">Colorful Stylie</li>
+                        <li style="background-color: bisque; color: purple;">Inset Effect</li>
+                        <li style="color: violet;text-shadow: 5px 5px 0px #000;">Double Font</li>
+    
+                    </ul>
+                    
+                    <ul class="secondline">
+                        <li style="margin-left: 30px;">Giossy Style</li>
+                        <li style="color: red; background-color: #000;">Grunge Stylie</li>
+                        <li style="color: rgb(113, 152, 238); background-color: blue;">Neon Glow</li>
+                    </ul>
+                </div>
+
+                <p>Cool CSS Text Effects</p>
+            </div>
+        </div>
+
+        <div class="bai3">
+            <h1 style="margin-top: 100px;">Bài 3</h1>
+        </div>
+
+        <div class="bai4">
+            <h1 style="margin-top: 100px;">Bài 4</h1>
+            <div class="bai4-main">
+                
+            </div>
+        </div>
+
+        <div class="bai5">
+            <h1 style="margin-top: 100px;">Bài 5</h1>
+            <div class="bai5-main">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="bai6">
+            <h1 style="margin-top: 100px;">Bài 6</h1>
+            <div class="bai6-main">
+                <div class="row">
+                    <div class="col1">
+                        <p>
+                            Cascading Stype Sheets (CSS) is a
+                            stype sheet language used for 
+                            describing the look and
+                            formatting of a document written
+                            in a markup language. Althouth
+                            most often used to change the
+                            style of web pages and user
+                            interfaces written in HTML and
+                            XHTML, the language can be 
+                            applied to any kind of XML
+                            docunment, including plain XML.
+                            SVG and XUL.
+                        </p>
+                    </div>
+
+                    <div class="col2">
+                        <p>
+                            Cascading Stype Sheets (CSS) is a
+                            stype sheet language used for 
+                            describing the look and
+                            formatting of a document written
+                            in a markup language. Althouth
+                            most often used to change the
+                            style of web pages and user
+                            interfaces written in HTML and
+                            XHTML, the language can be 
+                            applied to any kind of XML
+                            docunment, including plain XML.
+                            SVG and XUL.
+                        </p>
+                    </div>
+
+                    <div class="col3">
+                        <p>
+                            Cascading Stype Sheets (CSS) is a
+                            stype sheet language used for 
+                            describing the look and
+                            formatting of a document written
+                            in a markup language. Althouth
+                            most often used to change the
+                            style of web pages and user
+                            interfaces written in HTML and
+                            XHTML, the language can be 
+                            applied to any kind of XML
+                            docunment, including plain XML.
+                            SVG and XUL.
+                        </p>
+                    </div>  
+                </div>
+
+                <div class="row">
+                    <div class="col1">
+                        <p>
+                            Along with HTML and 
+                            Javascipt. CSS is a comersrtone
+                            technology used by most websites
+                            to create visually engaging
+                            webpages, user interfaces for web
+                            applications, and user interfaces
+                            for many mobile applications.
+                        </p>
+                    </div>
+
+                    <div class="col2">
+                        <p>
+                            Along with HTML and 
+                            Javascipt. CSS is a comersrtone
+                            technology used by most websites
+                            to create visually engaging
+                            webpages, user interfaces for web
+                            applications, and user interfaces
+                            for many mobile applications.
+                        </p>
+                    </div>
+
+                    <div class="col3">
+                        <p>
+                            Along with HTML and 
+                            Javascipt. CSS is a comersrtone
+                            technology used by most websites
+                            to create visually engaging
+                            webpages, user interfaces for web
+                            applications, and user interfaces
+                            for many mobile applications.
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="bai7">
+            <h1 style="margin-top: 100px;">Bài 7</h1>
+            <div class="bai7-main">
+                <h1>MH17 crash: Russia vetoes UN resolution
+                    for international tribunal
+                </h1>
+
+                <div class="contaner-table">
+                    <p class="newspaper">
+                        Russia has used its veto at
+                        the UN to block a dreaft
+                        resolution to set up an
+                        international tributal into
+                        the MH17 air disaster in
+                        July 2014. It was the only
+                        nation at the 15-member
+                        UN Security widespread
+                        condemnation.
+
+                        The malaysian Airlines
+                        flight from Amsterdam to
+                        Kuala Lumpur crashed in
+                        eastern Ukraine, Killing all
+                        298 peple on board, Pro-
+                        Russion rebels in the area
+                        have denied shooting
+                        down the aircraft. Western 
+                        nations and Ukraine say
+                        there is evidence it was hit
+                        by a Russian-supplied Buk
+                        anti-aircraft missile-a
+                        claim also denied by
+                        Russia. 'Callous disregard'
+
+                        Malaysia pushed for an
+                        international tribunal to try
+                        those responsible. The
+                        move was backed by the
+                        Nertherlands-which had
+                        196 nationals on board-
+                        Ukraine, Belgium and
+                        Australia. Moscow has
+                        blamed the goverment in
+                        Kiev for the disaster.
+                        Eleven of the 15 UN
+                        Secutity Council members
+                        backed the draft resolution
+                        Speaking earlier this
+                        month, Russian President
+                        Vladimir Putin said that
+                        the establishment of a
+                        tribunal would be
+                        "premature" and "counter-
+                        productive".
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bai8">
+            <h1 style="margin-top: 100px;">Bài 8</h1>
+        </div>
+
+        <div class="bai9">
+            <h1 style="margin-top: 100px;">Bài 9</h1>
+        </div>
+        
+        <div class="bai10">
+            <h1 style="margin-top: 100px;">Bài 10</h1>
+        </div>
+    </div>
+</body>
+</html>
